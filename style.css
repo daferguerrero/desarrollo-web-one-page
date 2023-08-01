@@ -1,0 +1,387 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
+
+:root {
+  --amarillo10: #f39c12;
+  --amarillo20: #eebc6b;
+  --blanco: #fff;
+  --blanco-alfa: rgba(255, 255, 255, 0.5);
+  --gris10: #f5f5f5;
+  --gris20: #646464;
+  --gris30: #1e1e1e;
+  --gris-alfa: rgba(50, 50, 50, 0.5);
+  --negro: #000;
+  --negro-alfa: rgba(0, 0, 0, 0.5);
+}
+
+/** Estilos Generales */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {scroll-behavior: smooth;}
+body {font-family: 'Roboto', sans-serif;}
+h1 {font-size: 3.5em;}
+h2 {font-size: 2.7em;}
+h3 {font-size: 2em;}
+h4 {font-size: 1.25em;}
+p {font-size: 1.25em;}
+ul {list-style: none;}
+li {font-size: 1.25em;}
+
+
+button {
+  font-size: 1.25em;
+  font-weight: bold;
+  color: var(--blanco);
+  background-color: var(--amarillo10);
+  padding: 10px 30px;
+  border-radius: 5px;
+  border: 2px solid var(--blanco-alfa);
+  box-shadow: 0px 0px 10px var(--blanco-alfa);
+}
+
+button:hover {
+  background-color: var(--amarillo20);
+  cursor: pointer;
+}
+
+.container {
+  max-width: 1400px;
+  margin: auto;
+}
+
+
+/** Barra de Navegación */
+header {
+  background-color: var(--gris10);
+}
+
+header .container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+header .container .logo {
+  padding: 25px 30px;
+  font-weight: bold;
+  color: var(--amarillo10);
+  font-size: 1.45em;
+}
+
+header .container .logo:hover {
+  color: var(--gris30)
+}
+
+header nav {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  padding-bottom: 25px;
+}
+
+header a {
+  padding: 5px 12px;
+  text-decoration: none;
+  font-weight: bold;
+  color: var(--negro);
+}
+
+header a:hover {
+  color: var(--amarillo10);
+}
+
+
+/** Sección Hero */
+#hero {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  flex-direction: column;
+  height: 90vh;
+  background-image: linear-gradient(0deg,
+    var(--negro-alfa),
+    var(--negro-alfa)),
+    url("img/img-hero-1.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+
+#hero h1 {
+  color: var(--blanco);
+  padding-bottom: 40px;
+}
+
+#hero button {
+  font-size: 1.75em;
+}
+
+
+/** Sección Quienes Somos */
+#quienes-somos .container {
+  text-align: center;
+  padding: 200px 12px;
+}
+
+#quienes-somos .container h2 span {
+  color: var(--amarillo10);
+}
+
+
+/** Sección Nuestros Programas */
+#nuestros-programas {
+  background-color: var(--gris30);
+  color: var(--blanco);
+  text-align: center;
+}
+
+#nuestros-programas .container {
+  padding: 150px 12px;
+}
+
+#nuestros-programas h2 {
+  margin: 0 16px 16px 16px;
+  font-size: 3.2em;
+}
+
+#nuestros-programas p {
+  display: none;
+}
+
+#nuestros-programas .carta {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+
+  padding: 50px 0;
+  margin: 30px;
+  border-radius: 15px;
+}
+
+#nuestros-programas .carta:first-child {
+  background-image: linear-gradient(0deg,
+    var(--negro-alfa),
+    var(--negro-alfa)),
+    url("img/front-end-1.jpg");
+}
+
+#nuestros-programas .carta:nth-child(2) {
+  background-image: linear-gradient(0deg,
+    var(--negro-alfa),
+    var(--negro-alfa)),
+    url("img/back-end-2.jpg");
+}
+
+#nuestros-programas .carta:last-child {
+  background-image: linear-gradient(0deg,
+    var(--negro-alfa),
+    var(--negro-alfa)),
+    url("img/full-stack-1.jpg");
+}
+
+
+/** Sección Características */
+#caracteristicas .container {
+  text-align: initial;
+  display: flex;
+  justify-content: center;
+  padding: 250px 0px;
+}
+
+#caracteristicas li {
+  margin: 16px 0;
+  font-weight: bold;
+}
+
+#caracteristicas li i {
+  color: var(--amarillo10);
+  padding-right: 5px;
+}
+
+
+/** Sección Final */
+#final {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background-color: var(--gris30);
+  color: var(--blanco);
+  height: 80vh;
+}
+
+#final h2 {
+  font-size: 9vw;
+  margin: 40px;
+}
+
+#final button {
+  font-size: 1.75em;
+}
+
+/** Pie de página */
+footer {
+  background-color: var(--gris10);
+}
+
+footer .container {
+  height: 150px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+footer .container p {
+  color: var(--gris20);
+}
+
+footer .container .redes-sociales h4 {
+  color: var(--gris20);
+}
+
+footer .container .redes-sociales .redes {
+  display: flex;
+  flex-direction: row;
+}
+
+footer .container .redes-sociales a {
+  font-size: 2rem;
+  color: var(--gris20);
+  line-height: 1;
+  margin-inline-end: 30px;
+}
+
+footer .container .redes-sociales a:hover {
+  color: var(--amarillo10);
+}
+
+
+@media screen and (max-width: 530px) {
+  /** Pie de página */
+  footer .container {
+    height: 100%;
+    flex-direction: column;
+  }
+}
+
+
+@media (min-width: 910px) {
+  /** Barra de Navegación */
+  header {
+    position: fixed;
+    width: 100%;
+  }
+
+  header .container {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  header nav {
+    flex-direction: row;
+    padding-bottom: 0;
+    padding-right: 20px;
+  }
+
+  /** Sección Hero */
+  #hero h1 {
+    font-size: 4em;
+  }
+
+
+  /** Sección Quienes Somos */
+  #quienes-somos .container {
+    display: flex;
+    justify-content: space-evenly;
+  }
+
+  #quienes-somos .container .img-quienes-somos {
+    background-image: url("img/quienes-somos.jpg");
+    background-size: cover;
+    background-position: center center;
+    height: 480px;
+    width: 400px;
+  }
+
+  #quienes-somos .container .texto {
+    width: 50%;
+    max-width: 600px;
+    text-align: initial;
+    padding-left: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+
+  /** Sección Nuestros Programas */
+  #nuestros-programas .container .container-programas {
+    display: flex;
+    justify-content: center;
+  }
+
+  #nuestros-programas .container .container-programas .carta {
+    background-size: 100% 150px;
+    background-position-y: 0;
+    background-color: var(--gris-alfa);
+    box-shadow: 2px 2px 10px var(--negro-alfa);
+  }
+
+  #nuestros-programas .container h2 {
+    font-size: 4em;
+  }
+
+  #nuestros-programas .container .container-programas .carta h3 {
+    padding-bottom: 30px;
+  }
+
+  #nuestros-programas .container .container-programas .carta p {
+    display: block;
+    margin-bottom: 30px;
+  }
+
+
+  /** Sección Características */
+  #caracteristicas {
+    background-image: url("img/caracteristicas.jpg");
+    background-repeat: no-repeat;
+    background-size: 550px;
+    background-position: calc(100vw - 600px) center;
+  }
+
+  #caracteristicas .container {
+    text-align: initial;
+    display: inline-block;
+  }
+
+  #caracteristicas ul {
+    margin-left: 50px;
+  }
+
+
+  /** Sección Final */
+  #final h2 {
+    font-size: 5em;
+  }
+
+  #final button {
+    font-size: 2em;
+  }
+}
+
+@media (min-width: 1200px) {
+  /** Sección Características */
+  #caracteristicas {
+    background-position: calc(100vw - 800px) center;
+  }
+
+  #caracteristicas .container {
+    padding-left: 100px;
+  }
+}
