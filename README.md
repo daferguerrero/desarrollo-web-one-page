@@ -1,4 +1,4 @@
-# Proyecto: Práctica Desarrollo Web One Page
+# Proyecto: Práctica Landing Page "Desarrollo Web"
 
 ## Descripción
 Este proyecto es una página web de una sola página (one-page) creada como parte de un ejercicio de desarrollo web. El objetivo principal de esta página es demostrar las habilidades y conocimientos del autor en diseño web y desarrollo frontend.
