@@ -1,10 +1,10 @@
 # Proyecto: Práctica Landing Page "Desarrollo Web"
 
 ## Descripción
-Este proyecto es una página web de una sola página (one-page) creada como parte de un ejercicio de desarrollo web. El objetivo principal de esta página es demostrar las habilidades y conocimientos del autor en diseño web y desarrollo frontend.
+Este proyecto es una Landing Page creada como parte de un ejercicio de desarrollo web. El objetivo principal de esta página es demostrar las habilidades y conocimientos del autor en diseño web y desarrollo frontend.
 
 ## Demo
-Puedes ver una demostración en vivo del proyecto [aquí](https://daferguerrero.github.io/desarrollo-web-one-page/)
+Puedes ver una demostración en vivo del proyecto [aquí](https://daferguerrero.github.io/landing-page-desarrollo-web/)
 
 ## Contenido
 El sitio web incluye las siguientes secciones:
